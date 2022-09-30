@@ -7,6 +7,45 @@
   <title>Document</title>
 </head>
 <body>
-  <h1></h1>
+  <h1>Ma Press Review</h1>
+  <nav>
+    <a href="/page1">Page1</a>
+    <a href="/page2">Page2</a>
+    <a href="/page3">Page3</a>
+  </nav>
+  <details>
+    <summary>Mon titre</summary>
+    Tapez du texte qui ne va pas apparraitre tout de suite
+  </details>
+  <select name="" id="">
+    <optgroup label="de 0 à 10">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option> 
+    </optgroup>
+    <optgroup label="de 11 à 20">
+
+      <option value="11">11</option>
+      <option value="12">21</option>
+      <option value="13">13</option>
+    </optgroup>
+
+  </select>
+  <input list="maliste" name="maliste">
+
+  <progress max="100" value="0" id="progress">70%</progress>
+  <datalist id="maliste">
+    <option value="25"/>
+    <option value="35"/>
+    <option value="45"/>
+  </datalist>
+  <script>
+    const progress = document.getElementById("progress");
+    for (let i = 0; i < 100; i++) {
+      setTimeout(() => {
+        progress.value = progress.value + 1;
+      }, i * 200)
+    }
+  </script>
 </body>
 </html>
